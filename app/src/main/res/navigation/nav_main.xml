@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/fg_main"
+    android:id="@+id/nav_main">
+    <fragment
+        android:id="@+id/fg_main"
+        android:name="com.xuchengpu.jetpackdemo.MainFragment">
+        <action
+            android:id="@+id/nav_to_login"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fg_login"
+        android:name="com.xuchengpu.jetpackdemo.LoginFragment"></fragment>
+
+</navigation>
