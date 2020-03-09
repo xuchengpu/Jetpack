@@ -23,7 +23,7 @@ class MainFragment : Fragment() {
         viewModel=ViewModelProvider(this).get(MainViewModel::class.java).apply {
             liveList.observe(this@MainFragment, Observer {list->
                 mAdapter.submitList(list)
-                mAdapter.notifyDataSetChanged()
+//                mAdapter.notifyDataSetChanged()
             })
         }
     }
